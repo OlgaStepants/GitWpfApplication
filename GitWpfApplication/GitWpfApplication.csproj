@@ -55,6 +55,24 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs" />
+    <Compile Include="Window1.xaml.cs" />
+    <Compile Include="Альбомы.cs" />
+    <Compile Include="Аудиотека1DataSet.Designer.cs" />
+    <Compile Include="Аудиотека1DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Аудиотека1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Аудиофайлы.cs" />
+    <Compile Include="Жанры.cs" />
+    <Compile Include="Исполнители.cs" />
+    <Compile Include="Языки.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -69,6 +87,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Menu.xaml.cs" />
+    <Compile Include="Model.Context.cs" />
+    <Compile Include="Model.cs" />
+    <Compile Include="Model.Designer.cs" />
+    <Compile Include="Page1.xaml.cs" />
+    <Compile Include="Page2.xaml.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -86,11 +110,33 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <None Include="Аудиотека1DataSet.xsc">
+      <DependentUpon>Аудиотека1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Аудиотека1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Аудиотека1DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Аудиотека1DataSet.xss">
+      <DependentUpon>Аудиотека1DataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
